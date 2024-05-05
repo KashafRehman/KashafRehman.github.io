@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/lemonade.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/lemonade.png" onclick="img('image/carrots.png')">
+            <img src="image/Pineapple.png" onclick="img('image/capisum.webp')">
+            <img src="image/Pomegranette.png" onclick="img('')">
+            <img src="image/Juices.png" onclick="img('image/carrots.png')">
+            <img src="image/Milkshake.png" onclick="img('image/capsium.jpg')">
+            <img src="image/Juices.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Lemonade</h3>
+        <h4> <small>$</small>150.00 </h4>
+        <p>Quench your thirst with our delightful lemonade, a timeless beverage that brings a burst of freshness with every sip. Made simply with freshly squeezed lemons, water, and a touch of sweetness, our lemonade is a classic drink that's loved by all ages. We start by carefully selecting the juiciest lemons, ensuring they're ripe and bursting with flavor. Then, we hand-squeeze each lemon to extract its zesty juice, capturing all the natural tanginess and aroma. Next, we mix the lemon juice with chilled water, creating a cool and invigorating base for our lemonade. We add just the right amount of sugar to balance the tartness of the lemons, ensuring a perfect harmony of flavors in every glass. But what truly sets our lemonade apart is its presentation. We serve it in tall glasses filled with ice cubes, keeping it refreshingly cold and crisp. A slice of fresh lemon adorns the rim of each glass, adding a touch of elegance and a hint of extra zest. As you take a sip of our lemonade, you'll be greeted by the bright and citrusy flavor of the lemons, followed by a subtle sweetness that dances on your palate. The coolness of the ice cubes refreshes you from within, making each sip a delightful experience. Whether you're lounging by the pool, enjoying a picnic in the park, or simply unwinding at home, our lemonade is the perfect companion for any occasion. So why not treat yourself to a glass today and experience the pure joy.</p>
+
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

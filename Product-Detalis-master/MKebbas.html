@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/mutton kebabs.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/mutton kebabs.png" onclick="img('image/carrots.png')">
+            <img src="image/mutton pulao.png" onclick="img('image/capisum.webp')">
+            <img src="image/Mutton Steak.png" onclick="img('')">
+            <img src="image/Mutton Karahi.png" onclick="img('image/carrots.png')">
+            <img src="image/Mutton Curry.png" onclick="img('image/capsium.jpg')">
+            <img src="image/Mutton Karahi.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Mutton Kebabs</h3>
+        <h4> <small>$</small>250.00 </h4>
+        <p>Mutton kebabs are a delicious dish enjoyed by many. They're made with tender mutton meat seasoned with spices and then cooked on skewers. First, we start with the mutton. Mutton is a type of meat from sheep that's rich in flavor. We cut it into small pieces and then season it with spices like salt, pepper, and cumin. This gives the meat lots of taste. Next, we shape the seasoned mutton into long, thin cylinders and put them onto skewers. This makes it easier to cook and eat. Now, we cook the kebabs. We can grill them over hot coals, roast them in the oven, or even cook them on a stovetop grill. As they cook, the spices mix with the meat, creating a mouthwatering aroma. Once the kebabs are cooked through and have a nice brown color on the outside, they're ready to eat. Some people like to squeeze lemon juice over them or sprinkle them with fresh herbs like mint or cilantro for extra flavor. Mutton kebabs are often served with a side of yogurt sauce called raita and some warm flatbread like naan or pita. They're perfect for a barbecue with friends or a cozy dinner at Restaurant. You can invite your friends and family on a kebab party at our restaurant, People love mutton kebabs because they're so tasty and satisfying. The meat is tender and juicy, and the spices give it a nice kick. Plus, they're easy to make and can be cooked in many different ways, so you can enjoy them whenever you want!</p>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/pomejuice.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/lemonade.png" onclick="img('image/carrots.png')">
+            <img src="image/Pineapple.png" onclick="img('image/capisum.webp')">
+            <img src="image/Pomegranette.png" onclick="img('')">
+            <img src="image/Juices.png" onclick="img('image/carrots.png')">
+            <img src="image/Milkshake.png" onclick="img('image/capsium.jpg')">
+            <img src="image/Juices.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Pomegranette Juice</h3>
+        <h4> <small>$</small>150.00 </h4>
+        <p>Quench your thirst with the delightful taste of our pomegranate juice, crafted from the finest, ripe pomegranates. We handpick each fruit, ensuring it's bursting with juiciness and flavor. With careful precision, we extract the vibrant seeds and press them to release their luscious, ruby-red juice. Our pomegranate juice is a pure and natural delight, free from any added sugars or artificial additives. It's simply the essence of pomegranate, packed with antioxidants and vitamins that promote good health and well-being. But beyond its nutritional benefits, our pomegranate juice is a sensory delight. With each sip, you'll experience a burst of tangy sweetness that dances on your palate, leaving you feeling refreshed and invigorated. We serve our pomegranate juice chilled, poured over ice to enhance its cool, refreshing taste. It's the perfect beverage to enjoy on a hot summer's day or as a revitalizing pick-me-up any time of year. Whether you're seeking a healthy alternative to sugary drinks or simply craving the unique flavor of pomegranate, our juice is sure to satisfy your thirst and tantalize your taste buds. So why wait? Treat yourself to a glass of our delicious pomegranate juice today and experience the pure, natural goodness of this exquisite fruit. Order your favourite juice in this hot summers and enjoy it as its refreshing taste gives you more joy and happiness.</p>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

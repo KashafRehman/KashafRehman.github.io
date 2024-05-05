@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/Beef Grilled.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/Beef Burger.png" onclick="img('image/carrots.png')">
+            <img src="image/Beef Grilled.png" onclick="img('image/capisum.webp')">
+            <img src="image/Beef Karahi.png" onclick="img('')">
+            <img src="image/Beef Steaks.png" onclick="img('image/carrots.png')">
+            <img src="image/Beef Curry (1).png" onclick="img('image/capsium.jpg')">
+            <img src="image/Beef Karahi.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Beef Grilled </h3>
+        <h4> <small>$</small>299.50 </h4>
+        <p>At our restaurant, we take pride in serving up mouthwatering beef grilled to perfection, a favorite dish that's sure to satisfy your hunger and leave you craving more. Our beef grilled starts with high-quality cuts of beef, chosen for their tenderness and flavor. We season the beef simply, with just a sprinkle of salt and pepper, allowing the natural flavors of the meat to shine through. Next, we fire up the grill to the perfect temperature, ensuring that it's nice and hot before we start cooking. We carefully place the seasoned beef on the grill, listening for the sizzle as it hits the hot surface. As the beef cooks, it begins to caramelize on the outside, forming a delicious crust while staying tender and juicy on the inside. The aroma that fills the air is irresistible, drawing in hungry diners from far and wide. Once the beef is cooked to perfection, we serve it hot off the grill, allowing you to enjoy it at its absolute best. Whether you like your beef rare, medium, or well-done, we can cook it to your liking, ensuring that every bite is bursting with flavor. Our beef grilled is often served with a side of crispy fries or a fresh salad, adding a touch of freshness and crunch to the meal. It's the perfect dish for any occasion, whether you're celebrating with friends and family or simply treating yourself to a delicious meal. So come on down to our restaurant and experience the mouthwatering goodness of our beef grilled today!</p>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

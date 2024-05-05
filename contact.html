@@ -3,7 +3,7 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Kashaffoodmania Contact</title>
+    <title> Kashaf's Foodmania</title>
     <link rel="shortcut icon" type="image/jpg" href="assets/img/2.png"/>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
@@ -34,7 +34,7 @@
                             <li>
                                 <span><img src="assets/img/mail.png"></span>
                                 <!-- <span>kashaffoodmania@email.com</span> -->
-                                <span><a href = "mailto: kashaffoodmania@email.com">kashaffoodmania@email.com</a></span>
+                                <span><a href = "mailto: kashaffoodmania@email.com"> Kashaffoodmania@email.com</a></span>
                             </li>
                             <li>
                                 <span><img src="assets/img/call.png"></span>
@@ -83,5 +83,16 @@
                     
              
         </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const contactForm = document.getElementById('contactForm');
+    
+                contactForm.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent form submission
+                    alert('Thank you for your feedback');
+                    contactForm.reset(); // Reset the form
+                });
+            });
+        </script>
     </body>
 </html>

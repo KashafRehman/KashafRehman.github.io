@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/mutton pulao.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/mutton kebabs.png" onclick="img('image/carrots.png')">
+            <img src="image/mutton pulao.png" onclick="img('image/capisum.webp')">
+            <img src="image/Mutton Steak.png" onclick="img('')">
+            <img src="image/Mutton Karahi.png" onclick="img('image/carrots.png')">
+            <img src="image/Mutton Curry.png" onclick="img('image/capsium.jpg')">
+            <img src="image/Mutton Karahi.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Mutton Pulao</h3>
+        <h4> <small>$</small>280.00 </h4>
+        <p>Mutton pulao is a delightful and aromatic dish cherished in many cultures for its rich flavors and comforting warmth. It's a one-pot meal that combines tender mutton pieces with fragrant rice and a blend of spices. To prepare mutton pulao, we start by marinating the mutton pieces in a mixture of yogurt and spices. This marinade helps to tenderize the meat and infuse it with delicious flavors. Meanwhile, we soak the rice in water to soften it and prepare it for cooking. Next, we heat oil in a large pot and add whole spices like cinnamon, cardamom, and cloves to release their aroma. Then, we add sliced onions and cook them until they're golden brown and caramelized. Once the onions are cooked, we add the marinated mutton pieces to the pot and cook them until they're browned on all sides. This step helps to seal in the juices and enhance the flavor of the meat. Now, we add the soaked rice to the pot along with water or broth, bringing everything to a boil. We then cover the pot and let the pulao simmer until the rice is cooked through and fluffy, and the mutton is tender. As the pulao cooks, it fills the kitchen with a mouthwatering aroma that tantalizes the senses. Once ready, we garnish the pulao with fresh herbs like cilantro or mint and serve it hot. Mutton pulao is often enjoyed with accompaniments like raita, a yogurt-based sauce, or a side salad. So enjoy this delicious dish by ordering it for a tremendous adventure.</p>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

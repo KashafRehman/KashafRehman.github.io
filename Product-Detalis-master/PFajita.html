@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/Pizza Fajita.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/Chicken Burger.png" onclick="img('image/carrots.png')">
+            <img src="image/Pizza Fajita.png" onclick="img('image/capisum.webp')">
+            <img src="image/Chicken Wraps.png" onclick="img('')">
+            <img src="image/Pizza Pepperoni.png" onclick="img('image/carrots.png')">
+            <img src="image/Beef Burger.png" onclick="img('image/capsium.jpg')">
+            <img src="image/Chicken Wraps.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Fajita Pizza</h3>
+        <h4> <small>$</small>300.00 </h4>
+        <p>Get ready for a flavor fiesta with our sizzling fajita pizza, a mouthwatering creation that's sure to spice up your taste buds and satisfy your hunger cravings. Our fajita pizza is a delicious fusion of two culinary classics: the zesty flavors of Mexican fajitas and the cheesy goodness of Italian pizza. It starts with a thin and crispy pizza crust, perfectly baked to golden perfection. Next, we slather the crust with a generous layer of tangy tomato sauce, adding a burst of flavor to every bite. Then, we pile on a colorful array of toppings, including tender strips of grilled chicken, sautéed bell peppers, onions, and mushrooms. To bring the flavors together, we sprinkle a blend of Mexican spices over the toppings, adding a hint of heat and depth to the pizza. A generous handful of shredded mozzarella cheese is then scattered over the top, melting into gooey perfection as it bakes in the oven. As the fajita pizza cooks, it fills the air with an irresistible aroma that will leave your mouth watering in anticipation. Once it's hot and bubbly, we pull it out of the oven and garnish it with fresh cilantro and a squeeze of lime juice for a final burst of flavor. Served hot and fresh out of the oven, our fajita pizza is a feast for the senses that's perfect for sharing with friends and family. Whether you're a fan of Mexican cuisine, Italian pizza, or just looking for something deliciously different, our fajita pizza is sure to hit the spot. So come on down to our restaurant and Enjoy it.</p>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

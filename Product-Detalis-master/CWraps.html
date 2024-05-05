@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/Chicken Wraps.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/Crispy Chicken.png" onclick="img('image/carrots.png')">
+            <img src="image/Chicken Burger.png" onclick="img('image/capisum.webp')">
+            <img src="image/Chicken Biryani.png" onclick="img('')">
+            <img src="image/Chicken Wraps.png" onclick="img('image/carrots.png')">
+            <img src="image/Chicken Broast.png" onclick="img('image/capsium.jpg')">
+            <img src="image/Chicken Burger.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Chicken Wraps</h3>
+        <h4> <small>$</small>200.50 </h4>
+        <p>Chicken wraps are a delicious and convenient meal option enjoyed by many. They consist of tender chicken, fresh vegetables, and flavorful sauces wrapped in a soft tortilla. To make chicken wraps, we start by cooking the chicken. It can be grilled, baked, or shredded from a rotisserie chicken. We season it with spices like garlic powder, onion powder, and paprika for extra flavor. Next, we prepare the tortillas by warming them slightly to make them more pliable. This step also enhances their taste and texture. Now, we assemble the wraps by placing a generous portion of cooked chicken in the center of each tortilla. We add fresh vegetables such as lettuce, tomatoes, cucumbers, and bell peppers for crunch and nutrition. To elevate the flavor, we drizzle on some sauce. Popular choices include ranch dressing, barbecue sauce, honey mustard, or tzatziki sauce, adding creaminess to the wraps. Once all the ingredients are in place, we tightly roll up the tortillas, enclosing the filling securely inside. The wraps are now ready to be enjoyed! Chicken wraps are perfect for a quick lunch, snack, or light dinner. They are portable, making them ideal for on-the-go meals or packed lunches for school or work. Whether you're craving a flavorful and satisfying meal or need a convenient grab-and-go option, chicken wraps are sure to hit the spot!</p>
+
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

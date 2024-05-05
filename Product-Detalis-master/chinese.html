@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/Chinese Rice.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/White Rice.png" onclick="img('image/carrots.png')">
+            <img src="image/Chicken Shashlik.png" onclick="img('image/capisum.webp')">
+            <img src="image/Chicken Biryani.png" onclick="img('')">
+            <img src="image/Chicken Shashlik.png" onclick="img('image/carrots.png')">
+            <img src="image/Chinese Rice.png" onclick="img('image/capsium.jpg')">
+            <img src="image/Vegetable Rice.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Chinese Rice </h3>
+        <h4> <small>$</small>190.00 </h4>
+        <p>Chinese vegetable rice is one the most tasty dish and liked by all the people. We followed this receipe from China, it is one of the most famous and tasty delicious dish with a very healthy ingredients in it. . Unlike traditional Chinese rice with meat, this version features a colorful array of vegetables, making it perfect for vegetarians and veggie lovers. To make Chinese vegetable rice, you start by selecting fresh vegetables like carrots, bell peppers, broccoli, mushrooms, and snow peas. These veggies are chopped into bite-sized pieces and stir-fried in a wok with aromatic seasonings such as garlic, ginger, and soy sauce. Next, fragrant jasmine or long-grain rice is cooked separately until fluffy and tender. Once cooked, the rice is combined with the stir-fried vegetables, creating a vibrant and nutritious dish. Each mouthful of Chinese vegetable rice bursts with the flavors of crunchy vegetables and savory seasonings. It's a delightful mix of textures and tastes that is both satisfying and wholesome. It does not matter whether you are a vegetarian or a meat lover, everyone equally likes it’s taste. With its colorful presentation and mouthwatering taste, it's sure to become a favorite in your household. Chinese vegetable rice is a tasty dish enjoyed by people in the entire world. Everyone loves to order it again and again, it has become popular for its delicious flavors and healthy ingredients.</p>
+
+
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

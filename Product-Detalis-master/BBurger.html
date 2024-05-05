@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/Beef Burger.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/Beef Burger.png" onclick="img('image/carrots.png')">
+            <img src="image/Beef Grilled.png" onclick="img('image/capisum.webp')">
+            <img src="image/Beef Karahi.png" onclick="img('')">
+            <img src="image/Beef Steaks.png" onclick="img('image/carrots.png')">
+            <img src="image/Beef Curry (1).png" onclick="img('image/capsium.jpg')">
+            <img src="image/Beef Karahi.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Beef Burger </h3>
+        <h4> <small>$</small>250.50 </h4>
+        <p>Sink your teeth into the deliciousness of our classic beef burger, a favorite at our restaurant that promises to satisfy your cravings and leave you wanting more. Our beef burger starts with a juicy and flavorful beef patty made from premium ground beef. We carefully season the meat with simple spices like salt, pepper, and garlic powder, ensuring each bite is bursting with savory goodness. Next, we grill the beef patty to perfection, allowing it to develop a mouthwatering charred exterior while retaining its tender and juicy center. The aroma that fills the air as the patty sizzles on the grill is enough to make your mouth water. As the beef patty cooks, we prepare the other components of the burger. We toast our sesame seed buns to golden perfection, adding a delightful crunch to every bite. Crisp lettuce leaves, ripe tomato slices, and crunchy pickles are meticulously arranged atop the bun, adding freshness and texture to the burger. Once the beef patty is cooked to perfection, we place it on the bun and add a slice of creamy melted cheese, allowing it to melt over the hot patty and create a gooey, indulgent layer of flavor. To finish off our beef burger, we top it with a dollop of tangy ketchup and creamy mayonnaise, adding the perfect balance of sweet and tangy flavors. Served with a side of crispy fries or a fresh salad, our beef burger is the ultimate comfort food that is sure to leave you feeling satisfied and content. So order it now.</p>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

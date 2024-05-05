@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/Chicken Burger.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/Crispy Chicken.png" onclick="img('image/carrots.png')">
+            <img src="image/Chicken Burger.png" onclick="img('image/capisum.webp')">
+            <img src="image/Chicken Biryani.png" onclick="img('')">
+            <img src="image/Chicken Wraps.png" onclick="img('image/carrots.png')">
+            <img src="image/Chicken Broast.png" onclick="img('image/capsium.jpg')">
+            <img src="image/Chicken Burger.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Chicken Burger </h3>
+        <h4> <small>$</small>250.50 </h4>
+        <p>A chicken burger is a yummy sandwich loved by many people. It's made with a juicy chicken patty placed between two soft burger buns. First, we start with the chicken patty. We take ground chicken meat and mix it with spices like salt, pepper, garlic powder, and onion powder. Then, we shape the mixture into patties and cook them until they're cooked through and golden brown on the outside. Next, we prepare the burger buns. We toast them lightly to give them a nice crunch and warmth. Now comes the fun part: assembling the burger! We place the cooked chicken patty on the bottom bun and add toppings like lettuce, tomato slices, and pickles. Some people also like to add cheese or bacon for extra flavor. Finally, we put the top bun on top of everything to complete the burger. And there you have it—a delicious chicken burger ready to eat! Chicken burgers are often served with sides like french fries, potato chips, or a fresh salad. They're perfect for a quick meal on the go or a casual dinner with friends and family. People love chicken burgers because they're so tasty and satisfying. Plus, you can customize them with your favorite toppings to make them just the way you like. Chicken Burger is highly rated by the people of all ages and its delicious taste makes everyone crave for it. Whether you're craving something savory and delicious or need a quick and easy meal, a chicken burger is always a great choice!</p>
+
+
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

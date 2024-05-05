@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/Chicken Shashlik.png" class="slide">
+        </div>
+        <div class="option flex">
+          <img src="image/White Rice.png" onclick="img('image/carrots.png')">
+          <img src="image/Chicken Shashlik.png" onclick="img('image/capisum.webp')">
+          <img src="image/Chicken Biryani.png" onclick="img('')">
+          <img src="image/Chicken Shashlik.png" onclick="img('image/carrots.png')">
+          <img src="image/Chinese Rice.png" onclick="img('image/capsium.jpg')">
+          <img src="image/Vegetable Rice.png" onclick="img('image/veges.png')">
+        </div>
+      </div>
+      <div class="right">
+        <h3> Shashlik Rice </h3>
+        <h4> <small>$</small>220.00 </h4>
+        <p>Shashlik rice is a tasty dish that brings together juicy, marinated meat with tasty spices , aromatic rice, offering a taste adventure loved worldwide. Originating from Central Asia, it has traveled far, captivating taste buds with its unique flavors. First, the meat—beef, lamb, or chicken—is marinated with a mix of spices, herbs, and oils. This marinade tenderizes the meat and gives it a rich flavor. Then, the meat is skewered and grilled to perfection. Alongside the skewers, you have the rice—a fragrant bed of basmati grains cooked with spices like cumin, turmeric, onions, and garlic. It's like a flavor explosion in every bite! When you take a mouthful, you get the smoky taste from the grill mixed with the savory flavors of the meat and the aromatic rice. It's a perfect harmony of flavors that dance on your tongue. Usually served with a side of refreshing cucumber yogurt or a tangy tomato salad, shashlik rice is a feast for the senses. Whether you're sharing it with friends or enjoying it alone, every bite tells a story of tradition and culinary craftsmanship. So, next time you're craving something delicious, consider shashlik rice. Everyone loves to eat and order shashlik rice as it is alwas served with egg fried ice that gives extra aroma to its taste, peoples to order it again and again. You can also order fro our restaurant whenever you want. It's a wonderful journey that promises satisfaction with every bite!</p>
+
+
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

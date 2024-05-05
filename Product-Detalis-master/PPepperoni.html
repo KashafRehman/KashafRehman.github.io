@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/Pizza Pepperoni.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/Chicken Burger.png" onclick="img('image/carrots.png')">
+            <img src="image/Pizza Fajita.png" onclick="img('image/capisum.webp')">
+            <img src="image/Chicken Wraps.png" onclick="img('')">
+            <img src="image/Pizza Pepperoni.png" onclick="img('image/carrots.png')">
+            <img src="image/Beef Burger.png" onclick="img('image/capsium.jpg')">
+            <img src="image/Chicken Wraps.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Pepperoni Pizza</h3>
+        <h4> <small>$</small>300.00 </h4>
+        <p>Indulge in the timeless classic of our pepperoni pizza, a beloved favorite that promises to satisfy your craving for cheesy goodness and savory flavor. Our pepperoni pizza starts with a golden-brown crust, perfectly baked to crispy perfection. The crust serves as the foundation for the delicious layers of toppings that follow. Next, we spread a generous layer of tangy tomato sauce over the crust, adding a burst of flavor that complements the other ingredients perfectly. Then, we sprinkle a generous amount of shredded mozzarella cheese on top, ensuring each bite is ooey-gooey and full of cheesy goodness. But the star of the show is the pepperoni. We carefully arrange slices of savory pepperoni over the cheese, ensuring that each slice is perfectly spaced to maximize flavor in every bite. The pepperoni is savory and slightly spicy, adding a delicious kick to the pizza. As the pizza bakes in the oven, the cheese melts and bubbles, the pepperoni crisps up around the edges, and the crust turns golden brown and crispy. The aroma that fills the air is irresistible, drawing you in and making your mouth water in anticipation. Once the pizza is hot and bubbly, we pull it out of the oven and slice it into perfect wedges. Each slice is packed with flavor and satisfaction, making it the perfect choice for lunch, dinner, or a late-night snack. Whether you're dining in with friends and family or grabbing a quick bite on the go, our pepperoni pizza is sure to hit the spot.</p>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/Milkshake.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/lemonade.png" onclick="img('image/carrots.png')">
+            <img src="image/Pineapple.png" onclick="img('image/capisum.webp')">
+            <img src="image/Pomegranette.png" onclick="img('')">
+            <img src="image/Juices.png" onclick="img('image/carrots.png')">
+            <img src="image/Milkshake.png" onclick="img('image/capsium.jpg')">
+            <img src="image/Juices.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Strawberry Milkshake</h3>
+        <h4> <small>$</small>180.00 </h4>
+        <p>Indulge your sweet tooth and cool off with our delectable milkshakes, a creamy and satisfying treat that's perfect for any time of day. Made with the finest ingredients and blended to perfection, our milkshakes are a delightful way to satisfy your cravings and refresh your palate. We start with rich, creamy ice cream, available in a variety of flavors to suit every taste. Whether you're a fan of classic vanilla, indulgent chocolate, or adventurous fruit flavors, we've got something for everyone. Next, we add a splash of cold, refreshing milk to the mix, creating a smooth and creamy base for our milkshakes. The milk adds a hint of sweetness and helps to thin out the ice cream, creating the perfect consistency for sipping through a straw. But what truly sets our milkshakes apart is the endless variety of toppings and mix-ins available. From chocolate chips and cookie crumbles to fresh fruit and whipped cream, the possibilities are endless. Customize your milkshake to your heart's content and create a masterpiece that's uniquely yours. Whether you're enjoying a milkshake as a midday pick-me-up, a sweet treat after dinner, or a refreshing snack on a hot summer day, our milkshakes are sure to hit the spot. Each sip is a symphony of flavors and textures that will leave you craving more. So why wait? Treat yourself to a delicious milkshake today and experience the joy of creamy, indulgent goodness in every sip. Your taste buds will thank you!</p>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

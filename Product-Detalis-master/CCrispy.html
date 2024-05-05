@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/Crispy Chicken.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/Crispy Chicken.png" onclick="img('image/carrots.png')">
+            <img src="image/Chicken Burger.png" onclick="img('image/capisum.webp')">
+            <img src="image/Chicken Biryani.png" onclick="img('')">
+            <img src="image/Chicken Wraps.png" onclick="img('image/carrots.png')">
+            <img src="image/Chicken Broast.png" onclick="img('image/capsium.jpg')">
+            <img src="image/Chicken Burger.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Crispy Chicken </h3>
+        <h4> <small>$</small>180.00 </h4>
+        <p>Crispy chicken is a yummy dish loved by many people. It's all about juicy chicken coated in crunchy breadcrumbs and fried until it's golden brown and crispy. First, we start with the chicken. We cut it into pieces, like strips or nuggets, and then we season it with spices like salt, pepper, and garlic powder. This gives the chicken lots of flavor. Next, we prepare the coating. We dip the seasoned chicken pieces into beaten eggs and then coat them in breadcrumbs. The breadcrumbs give the chicken its crunchy texture when it's fried. Once the chicken is coated, we fry it in hot oil until it's crispy and cooked through. This usually takes about 5-7 minutes, depending on the size of the chicken pieces. Crispy chicken is often served with sides like french fries, potato wedges, or a fresh salad. Some people like to dip it in sauces like ketchup, barbecue sauce, or honey mustard for extra flavor. People love crispy chicken because it's so tasty and satisfying. It's perfect for family dinners, parties, or just when you're craving something crispy and delicious. Plus, it's easy to make at home, so you can enjoy it whenever you want! With its crunchy coating and juicy interior, crispy chicken is a classic comfort food that never goes out of style. Everyone loves it beacuse of its crunch that left always tremendous adventure on all. Whether enjoyed as a main course or a snack, it's sure to please even the pickiest eaters.</p>
+
+
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

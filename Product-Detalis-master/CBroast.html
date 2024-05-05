@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/Chicken Broast.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/Crispy Chicken.png" onclick="img('image/carrots.png')">
+            <img src="image/Chicken Burger.png" onclick="img('image/capisum.webp')">
+            <img src="image/Chicken Biryani.png" onclick="img('')">
+            <img src="image/Chicken Wraps.png" onclick="img('image/carrots.png')">
+            <img src="image/Chicken Broast.png" onclick="img('image/capsium.jpg')">
+            <img src="image/Chicken Burger.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Chicken Broast </h3>
+        <h4> <small>$</small>190.00 </h4>
+        <p>Chicken broast is a tasty dish loved by many people around the world. It's made by coating chicken pieces in seasoned flour and then frying them until they're golden brown and crispy. First, we start with the chicken. We cut it into pieces, like drumsticks or breast pieces, and then we season it with spices like salt, pepper, garlic powder, and paprika. This gives the chicken lots of flavor. Next, we prepare the coating. We mix flour with more spices, like garlic powder, paprika, and sometimes even a bit of cayenne pepper for some extra kick. Then, we dip the seasoned chicken pieces into the flour mixture, making sure they're coated evenly. Once the chicken is coated, we fry it in hot oil until it's golden brown and crispy on the outside and cooked through on the inside. This usually takes about 15-20 minutes, depending on the size of the chicken pieces. Chicken broast is often served with sides like fries, coleslaw, and dinner rolls. Some people like to dip it in ketchup or barbecue sauce for extra flavor. People love chicken broast because it's so delicious and satisfying. It's perfect for family dinners, parties, or just when you're craving something crispy and tasty. Plus, it's easy to make at kitchen, Chhicken broast is our one of the most highly demanded item and mostly ordered by the children because of its taste and due to less spices. Everyones always leave a good feedback. so you can enjoy it whenever you want!</p>
+
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

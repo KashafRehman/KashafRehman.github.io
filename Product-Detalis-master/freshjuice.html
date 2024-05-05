@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/Juices.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/lemonade.png" onclick="img('image/carrots.png')">
+            <img src="image/Pineapple.png" onclick="img('image/capisum.webp')">
+            <img src="image/Pomegranette.png" onclick="img('')">
+            <img src="image/Juices.png" onclick="img('image/carrots.png')">
+            <img src="image/Milkshake.png" onclick="img('image/capsium.jpg')">
+            <img src="image/Juices.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3>Fresh Juices</h3>
+        <h4> <small>$</small>150.00 </h4>
+        <p>Quench your thirst with our array of refreshing fresh juices, bursting with the natural goodness of fruits and vegetables. At our juice bar, we're dedicated to serving up a variety of vibrant and flavorful options to suit every taste bud and dietary preference. Each morning, we carefully select the freshest produce available, ensuring that only the ripest fruits and vegetables make it into our juices. From crisp apples and juicy oranges to leafy greens and vibrant berries, our ingredients are bursting with vitamins, minerals, and antioxidants to nourish your body from the inside out. Using state-of-the-art juicing equipment, we expertly extract the natural juices from our handpicked fruits and vegetables, preserving their flavor and nutritional benefits. We never add any artificial sweeteners, colors, or preservatives – just pure, unadulterated goodness in every sip. Whether you're in the mood for a classic orange juice to start your day off right, a refreshing green juice packed with leafy greens and cucumber, or a vibrant berry blend bursting with antioxidants, we have something for everyone. Our juices are served chilled and can be customized to your liking – add a splash of lemon for a zesty twist or a handful of mint for a refreshing burst of flavor. Whatever your preference, our fresh juices are sure to delight your taste buds and leave you feeling refreshed and revitalized. So why not stop by our juice bar today and treat yourself well.</p>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

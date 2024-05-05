@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/Pineapplejuice.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/lemonade.png" onclick="img('image/carrots.png')">
+            <img src="image/Pineapple.png" onclick="img('image/capisum.webp')">
+            <img src="image/Pomegranette.png" onclick="img('')">
+            <img src="image/Juices.png" onclick="img('image/carrots.png')">
+            <img src="image/Milkshake.png" onclick="img('image/capsium.jpg')">
+            <img src="image/Juices.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Pineapple Juice</h3>
+        <h4> <small>$</small>150.00 </h4>
+        <p>Quench your thirst with our delicious pineapple juice, a tropical treat that's bursting with flavor and goodness. Made simply from ripe pineapples, our juice is a refreshing way to enjoy the taste of the tropics. We start by selecting the freshest pineapples, ensuring they're ripe and sweet. Then, we carefully peel and core each pineapple, removing any tough outer layers to reveal the juicy, golden flesh inside. Next, we chop the pineapples into small pieces and blend them until they're smooth and creamy. We don't add any extra sugar or preservatives – just pure pineapple goodness in every sip. The result is a bright and tangy juice that's packed with vitamins, minerals, and antioxidants. Pineapple juice is known for its many health benefits, including boosting immunity, aiding digestion, and promoting healthy skin. But it's not just good for you – it tastes delicious too! Each sip is like a burst of sunshine, with the sweet and tropical flavor of fresh pineapple dancing on your taste buds. We serve our pineapple juice ice-cold, poured into tall glasses with plenty of ice cubes to keep it chilled. It's the perfect way to cool off on a hot day or enjoy a taste of the tropics any time of year. So why not treat yourself to a glass of our refreshing pineapple juice today? It's a simple pleasure that's sure to put a smile on your face and leave you feeling refreshed and revitalized. Enjoy this juice in summers and feel cool.</p>
+
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/plate2.png" class="slide">
+        </div>
+        <div class="option flex">
+          <img src="image/carrots.png" onclick="img('image/carrots.png')">
+          <img src="image/capisum.webp" onclick="img('image/capisum.webp')">
+          <img src="image/capsium.jpg" onclick="img('')">
+          <img src="image/carrots.png" onclick="img('image/carrots.png')">
+          <img src="image/capsium.jpg" onclick="img('image/capsium.jpg')">
+          <img src="image/veges.png" onclick="img('image/veges.png')">
+        </div>
+      </div>
+      <div class="right">
+        <h3>Salad with Fish</h3>
+        <h4> <small>$</small>95.50 </h4>
+        <p>Our Salad with Fish is a very famous and tasty salad of our Restaurant, Served in a big bowl that contains alot of healthy nutrients in it. Salad with Fish is rich in very healthy nutrients like omega that is very beneficial for the people of all ages which include children, adults, and old people. It provides Energy as it is rich in Carbs, Protein, and Vitamins, which is very healthy for all. Its ingredients include Green lettuce, Fish, Tomatoes, Onions, Carrots, Capsicum, Olives and mushrooms with some black pepper on it, that's very juicy and tasty. Each bite of it leaves a tremendous adventure on everyone. Very Fresh and mouthwatering! A very healthy and tasty salad with fish on it leaves a life-living experience for all. This Salad is a perfect meal when you want to go for a picnic, and also for those who are diet-conscious and fitness enthusiasts, It's a perfect meal that will fill your tummy for cravings. It's a yummiesh dish and a good meal itself people likes to order it always, and everyone lovess the taste of it, we are very delighted to announce that our Restaurant is one of the most famous and well-known for it's taste and quality. Our Customer's satisfaction is our utmost duty. So come and grab your meal and have a tremendous adventure on it, Once you will taste it you'll love to come again. Everyone likes it and always left a good review on this Salad. Order Now!</p>
+
+
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

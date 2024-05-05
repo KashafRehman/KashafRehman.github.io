@@ -105,3 +105,73 @@ sr.reveal(`.home__data, .home__img,
             .footer__content`, {
     interval: 200
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    const addToCartButtons = document.querySelectorAll('.button.menu__button');
+    const placeOrderButton = document.querySelector('.button.place-order');
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            const menuItem = this.closest('.menu__content');
+            const itemName = menuItem.querySelector('.menu__name').textContent;
+            const itemPrice = parseFloat(menuItem.querySelector('.menu__preci').textContent.replace('$', ''));
+            const itemImage = menuItem.querySelector('.menu__img').getAttribute('src');
+
+            addToCart(itemName, itemPrice, itemImage);
+
+            alert(`Added ${itemName} to cart!`);
+        });
+    });
+
+    placeOrderButton.addEventListener('click', function() {
+        placeOrder();
+    });
+
+    function addToCart(name, price, image) {
+        let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        cartItems.push({ name, price, image });
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        
+    }
+    const removeButtons = document.querySelectorAll('.remove-item');
+    removeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const index = parseInt(this.getAttribute('data-index'));
+            cartItems.splice(index, 1);
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+            location.reload(); // Reload the page to reflect the changes
+        });
+    });
+
+    
+
+    function placeOrder() {
+        // Implement your logic to place the order here
+        // For example, you could send the cart items to a backend server
+    
+        // Show a confirmation message
+        alert('Your order is confirmed!');
+    
+        // Clear the cart
+        localStorage.removeItem('cartItems');
+
+        if (window.location.pathname.includes('cart.html')) {
+            location.reload();
+        }
+    
+        // Refresh the page
+        location.reload();
+        
+    }
+    
+    function updateCartUI() {
+        // Update the total price
+        document.querySelector('.cart__total').textContent = `Total: $${total.toFixed(2)}`;
+    }
+});
+
+
+
+
+

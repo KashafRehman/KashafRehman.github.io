@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/Beef Curry (1).png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/Beef Burger.png" onclick="img('image/carrots.png')">
+            <img src="image/Beef Grilled.png" onclick="img('image/capisum.webp')">
+            <img src="image/Beef Karahi.png" onclick="img('')">
+            <img src="image/Beef Steaks.png" onclick="img('image/carrots.png')">
+            <img src="image/Beef Curry (1).png" onclick="img('image/capsium.jpg')">
+            <img src="image/Beef Karahi.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Beef Curry </h3>
+        <h4> <small>$</small>275.00 </h4>
+        <p>Indulge in the hearty flavors of our beef curry, a beloved dish at our restaurant that promises a satisfying meal for all. Our beef curry begins with tender pieces of beef, chosen for their quality and flavor. We carefully cut the beef into bite-sized pieces, ensuring each morsel is succulent and delicious. In our kitchen, skilled chefs craft a rich and aromatic curry sauce to complement the beef. We start by sautéing onions, garlic, and ginger until they're soft and fragrant. Then, we add a blend of spices like cumin, coriander, turmeric, and chili powder, creating a flavorful base for the curry. Next, we add tomatoes and coconut milk to the pot, giving the curry a creamy texture and a hint of sweetness. We let the sauce simmer gently, allowing the flavors to meld together and the beef to become tender and juicy. As the curry cooks, it fills the air with a tantalizing aroma that whets the appetite. Once the beef is cooked through and the sauce has thickened to perfection, we garnish the curry with fresh cilantro or parsley, adding a burst of freshness and color to each bowl. Served hot with a side of fluffy rice or warm naan bread, our beef curry is a comforting and satisfying meal that's perfect for any occasion. Whether you're dining with family, friends, or enjoying a meal alone, our beef curry is sure to please even the pickiest of eaters. Join us at our restaurant and experience the rich and flavorful taste of our signature beef curry today!</p>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

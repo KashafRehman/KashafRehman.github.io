@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/Beef Karahi.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/Beef Burger.png" onclick="img('image/carrots.png')">
+            <img src="image/Beef Grilled.png" onclick="img('image/capisum.webp')">
+            <img src="image/Beef Karahi.png" onclick="img('')">
+            <img src="image/Beef Steaks.png" onclick="img('image/carrots.png')">
+            <img src="image/Beef Curry (1).png" onclick="img('image/capsium.jpg')">
+            <img src="image/Beef Karahi.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Beef Karahi </h3>
+        <h4> <small>$</small>290.50 </h4>
+        <p>Treat yourself to the hearty goodness of our beef karahi, a cherished dish at our restaurant that promises to delight your taste buds and warm your soul. Beef karahi is a classic Pakistani dish known for its bold flavors and comforting appeal. It starts with tender pieces of beef, carefully selected for their quality and flavor. We cut the beef into bite-sized pieces, ensuring each morsel is succulent and delicious. In our kitchen, skilled chefs work their magic, crafting a rich and flavorful karahi sauce to complement the beef. We start by sautéing onions, garlic, and ginger until they're soft and fragrant. Then, we add a blend of spices like cumin, coriander, turmeric, and chili powder, creating a mouthwatering base for the dish. Next, we add tomatoes and green chilies to the pot, giving the karahi its signature tangy and spicy kick. We let the sauce simmer gently, allowing the flavors to meld together and the beef to become tender and juicy. As the beef karahi cooks, it fills the kitchen with an irresistible aroma that draws in hungry diners from far and wide. Once the beef is cooked through and the sauce has thickened to perfection, we garnish the dish with fresh cilantro or parsley, adding a burst of color and freshness. Served hot with a side of fluffy naan bread or steamed rice, our beef karahi is a comforting and satisfying meal that's perfect for any occasion. Whether you're dining with family, friends, or wanna enjoying a meal alone, Order from us.</p>
+            
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

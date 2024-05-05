@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/Vegetable Rice.png" class="slide">
+        </div>
+        <div class="option flex">
+            <img src="image/White Rice.png" onclick="img('image/carrots.png')">
+            <img src="image/Chicken Shashlik.png" onclick="img('image/capisum.webp')">
+            <img src="image/Chicken Biryani.png" onclick="img('')">
+            <img src="image/Chicken Shashlik.png" onclick="img('image/carrots.png')">
+            <img src="image/Chinese Rice.png" onclick="img('image/capsium.jpg')">
+            <img src="image/Vegetable Rice.png" onclick="img('image/veges.png')">
+          </div>
+      </div>
+      <div class="right">
+        <h3> Vegetable Rice </h3>
+        <h4> <small>$</small>110.50 </h4>
+        <p>Vegetable rice, a colorful medley of fresh vegetables is selected, including carrots, bell peppers, broccoli, peas, corn, and onions. These veggies are diced or sliced into bite-sized pieces, offering a variety of textures and flavors. Everyone likes its taste because of the different and tasty vegetables added in it and its ingredients like garlic, ginger, and onions. This cooking method helps to the people who are not a meat lover and actually loved vegetables that’s beneficial. Meanwhile, fragrant rice, such as basmati or jasmine rice, is cooked separately until fluffy and tender. Once cooked, the rice is combined with the stir-fried vegetables, creating a hearty and satisfying dish. The beauty of vegetable rice lies in its versatility. You can customize the dish according to your preferences, adding your favorite vegetables or adjusting the seasonings to suit your taste. It's a great way to use up leftover vegetables and create a nutritious meal. Vegetable rice is not only delicious but also packed with nutrients. The colorful array of vegetables provides essential vitamins, minerals, and dietary fiber, while the rice serves as a source of energy and complex carbohydrates. This wholesome dish can be enjoyed on its own or paired with other dishes such as grilled tofu, roasted chicken, or sautéed shrimp. Whether you're a vegetarian, vegan, or simply looking for a flavorful and nutritious meal. it's a dish that never fails to impress.
+
+        </p>
+
+
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>
