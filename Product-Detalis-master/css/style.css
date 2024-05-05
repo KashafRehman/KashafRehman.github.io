@@ -21,7 +21,7 @@ body {
 .left, .right {
   width: 50%;
   height: 80%;
-  padding: 150px;
+  padding: 111px;
 }
 
 .flex {
@@ -78,7 +78,7 @@ p {
   margin: 15px 10 20px 10;
   line-height: 30px;
   font: 1em sans-serif;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 
