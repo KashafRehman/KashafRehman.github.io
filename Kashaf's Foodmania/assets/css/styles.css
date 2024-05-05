@@ -229,7 +229,7 @@ img{
   background: rgba(6,156,84,.5);
   border-radius: .4rem;
   z-index: var(--z-tooltip);
-  transition: .4s;
+  transition: .2s;
   visibility: hidden;
 }
 
